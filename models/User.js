@@ -1,8 +1,8 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
-
+// TODO import bcrypt
 class User extends Model {
-
+    //TODO check password
 }
 
 User.init(
@@ -26,6 +26,7 @@ User.init(
         }
     }
     },
+    // TODO add hooks foo password hash
     {
         sequelize,
         freezeTableName: true,
