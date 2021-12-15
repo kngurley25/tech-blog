@@ -16,6 +16,6 @@ app.use(express.urlencoded({ extended: true }));
 // TODO update this to require controllers
 app.use(controllers);
 
-sequelize.sync({ force: true }).then(() => {
+sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log("Now listening on " + PORT));
 })
