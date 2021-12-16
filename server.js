@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 // TODO update controllers for express session
 const controllers = require("./controllers");
@@ -11,7 +12,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// TODO add static path to front end public folder
+app.use(express.static(path.join(__dirname, "public")));
 
 // TODO update this to require controllers
 app.use(controllers);
