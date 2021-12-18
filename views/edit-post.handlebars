@@ -1,12 +1,12 @@
 <article>
-    <a href="/dashboard">Return to dashboard</a>
+    <a href="/dashboard" class="title is-4">Return to dashboard</a>
     <h2>
         Edit post
     </h2>
     <form class="edit-post-form">
         <div>
             <input type="text" name="post-title" value="{{post.title}}" />
-            <input type="text" name="post-text" value="{{post.post_text}}" />
+            <textarea name="post-text" value="{{post.post_text}}">{{post.post_text}}</textarea>
         </div>
         <div>
             By you on {{format_date post.created_at}}

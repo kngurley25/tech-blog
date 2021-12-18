@@ -48,7 +48,7 @@ input:focus {
 }
 
 textarea {
-  min-width: 40%;
+  min-width: 80%;
   min-height: 60px;
 }
 
@@ -100,14 +100,6 @@ main {
   color: #3486eb;
 }
 
-.delete-post-btn {
-  background-color: #d41414;
-}
-
-.delete-post-btn:hover {
-  background-color: #ff643d;
-}
-
 .post {
   margin-bottom: 2%;
   line-height: 150%;
@@ -121,7 +113,8 @@ main {
 
 .edit-link {
   display: block;
-  margin: -1.5% 0 2% 0;
+  display: flex;
+  justify-content: center;
 }
 
 .comment-form {
@@ -141,12 +134,20 @@ main {
   opacity: 0.6;
 }
 
+.new-post-form {
+  margin-left: 5%;
+}
+
 .new-post-form input {
   width: 300px;
 }
 
 .edit-post-form {
   margin-bottom: 5%;
+}
+
+.edit-post-form input {
+  width: 300px;
 }
 
 footer {
