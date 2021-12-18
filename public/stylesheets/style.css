@@ -169,3 +169,11 @@ footer {
 .your-posts {
   list-style-type: none;
 }
+
+.login-form {
+  margin-left: 40%;
+}
+
+.signup-form {
+  margin-left: 40%;
+}

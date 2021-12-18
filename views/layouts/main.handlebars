@@ -17,8 +17,8 @@
             </h1>
             <nav class="subtitle is-5 level-item navbar">
                 <a href="/" class="navbar-item">Home</a>
-                {{#if loggedIn}}
                 <a href="/dashboard" class="navbar-item">Dashboard</a>
+                {{#if loggedIn}}
                 <button id="logout" class="btn-no-style navbar-item">Logout</button>
                 {{else}}
                 <a href="/login" class="navbar-item">Login</a>
