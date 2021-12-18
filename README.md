@@ -2,9 +2,9 @@
 
 ## Description
 An application in which a user can share thoughts and opinions on tech-related subjects through means of blogging. 
-User can view all blog post. With credentials, user can create new blog posts and make comments on other user blog posts. 
+User can view all blog posts and, with credentials, user can create new blog posts and add comments. 
 
-## Depoloyed application
+## Deployed application
 https://still-citadel-59357.herokuapp.com/
 
 ## Installation
