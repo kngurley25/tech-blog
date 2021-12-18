@@ -150,6 +150,17 @@ main {
   justify-content: center;
 }
 
+.create-link {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1% 2%;
+  border-radius: 10px;
+  margin-left: 5%;
+  width: fit-content;
+  background-color: darkcyan;
+  color: white;
+}
+
 footer {
   border-top: 1px solid #ccc;
   display: flex;
