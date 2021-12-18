@@ -11,16 +11,17 @@
 
 <body>
     <div class="wrapper">
-        <header>
-            <h1>
-                <a href="/">Welcome to Tech Blog!</a>
+        <header class="level">
+            <h1 class="title is-1 level-item">
+                Welcome to Tech Blog!
             </h1>
-            <nav>
+            <nav class="subtitle is-5 level-item navbar">
+                <a href="/" class="navbar-item">Home</a>
                 {{#if loggedIn}}
-                <a href="/dashboard">Dashboard</a>
-                <button id="logout" class="btn-no-style">Logout</button>
+                <a href="/dashboard" class="navbar-item">Dashboard</a>
+                <button id="logout" class="btn-no-style navbar-item">Logout</button>
                 {{else}}
-                <a href="/login">Login</a>
+                <a href="/login" class="navbar-item">Login</a>
                 {{/if}}
             </nav>
         </header>
