@@ -1,19 +1,23 @@
 <article>
-    <a href="/dashboard" class="title is-4">Return to dashboard</a>
-    <h2>
-        Edit post
-    </h2>
-    <form class="edit-post-form">
-        <div>
-            <input type="text" name="post-title" value="{{post.title}}" />
-            <textarea name="post-text" value="{{post.post_text}}">{{post.post_text}}</textarea>
-        </div>
-        <div>
-            By you on {{format_date post.created_at}}
-        </div>
-        <button type="submit">Update post</button>
-        <button type="button" class="delete-post-btn">Delete post</button>
-    </form>
+    <a href="/dashboard" class="subtitle is-6">&larr; Return to dashboard</a>
+    <div class="m-6">
+        <h2 class="title is-4">Edit post</h2>
+        <form class="edit-post-form">
+            <div>
+                <h2>Title</h2>
+                <input type="text" name="post-title" value="{{post.title}}" />
+            </div>
+            <div>
+                <h2>Content</h2>
+                <textarea name="post-text" value="{{post.post_text}}">{{post.post_text}}</textarea>
+            </div>
+            <div>
+                Posted by you on {{format_date post.created_at}}
+            </div>
+            <button type="submit">Update post</button>
+            <button type="button" class="delete-post-btn">Delete post</button>
+        </form>
+    </div>
 </article>
 
 {{> comments post.comments }}
